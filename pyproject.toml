@@ -1,0 +1,9 @@
+[project]
+name = "zettelkasten"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "webvtt-py>=0.5.1",
+]
