@@ -85,4 +85,4 @@ Bedrock Prompt Managementでは、IAMポリシーで細かな権限制御が可�
 
 ---
 
-#aws #bedrock #promptmanagement #iam #権限管理 #プロンプト管理 #生成AI
+#aws #aws/bedrock #promptmanagement #iam #権限管理 #プロンプト管理 #生成AI

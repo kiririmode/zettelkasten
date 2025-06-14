@@ -42,7 +42,7 @@ Amazon BedrockのProvisioned Throughputは、生成AIモデルの安定したス
 - MUの最適な設計・運用パターン
 
 ---
-#bedrock #aws #provisionedthroughput #modelunit #llm #生成AI
+#aws/bedrock #aws #provisionedthroughput #modelunit #ai/llm #生成AI
 
 （2025-06-02時点の情報。最新情報は公式ドキュメントも参照）
 

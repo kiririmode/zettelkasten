@@ -96,4 +96,4 @@ Promptは、ユーザーが「どのMCPサーバ（例：Perplexity、Notion、F
 - [[外部API連携とAIの実用化]]
 
 ## タグ
-#mcp #llm #resource #prompt #tool #エージェント #ai設計
+#ai/mcp #ai/llm #resource #prompt #tool #ai/agents #ai設計

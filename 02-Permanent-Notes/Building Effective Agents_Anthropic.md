@@ -86,4 +86,4 @@ flowchart TD
 - [Anthropic Cookbook: Agents](https://github.com/anthropics/anthropic-cookbook/tree/main/patterns/agents)
 - [Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
 
-#生成AI #エージェント #llm #設計パターン #anthropic
+#生成AI #ai/agents #ai/llm #設計パターン #anthropic

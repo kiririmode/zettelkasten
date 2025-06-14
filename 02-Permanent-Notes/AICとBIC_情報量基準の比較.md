@@ -36,4 +36,4 @@ AIC（Akaike Information Criterion, 赤池情報量規準）とBIC（Bayesian In
 - [定常性とは何か_その判定方法](定常性とは何か_その判定方法)
 
 ## タグ
-#時系列解析 #モデル選択 #aic #bic #情報量基準 #統計モデル
+#statistics/timeseries #モデル選択 #aic #bic #情報量基準 #statistics/models

@@ -1,67 +1,63 @@
 # CLAUDE.md
 
-This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
+このファイルは、Claude Code (claude.ai/code) がこのリポジトリのコードを扱う際のガイダンスを提供します。
 
-## Project Overview
-This is a Zettelkasten (German: "slip box") digital knowledge management system used for personal note-taking, knowledge organization, and idea development. The repository contains interconnected markdown notes organized in a structured format with cross-references and tags.
+## プロジェクト概要
+これは個人的なメモ取り、知識整理、アイデア開発のために使用されるZettelkasten（ドイツ語：「カード箱」）デジタル知識管理システムです。このリポジトリには、相互参照とタグを持つ構造化された形式で整理された、相互に接続されたマークダウンノートが含まれています。
 
-## Repository Structure
-- `02-Permanent-Notes/`: Main repository of permanent notes (Zettel) covering various topics
-- `03-Structured-Notes/`: Structured notes organized by themes
-- `2025-*.md`: Daily notes for specific dates
-- `main.py`: Simple Python script (minimal functionality)
-- `pyproject.toml`: Python project configuration with uv package manager
+## リポジトリ構造
+- `02-Permanent-Notes/`: 様々なトピックをカバーする永続ノート（Zettel）のメインリポジトリ
+- `03-Structured-Notes/`: テーマ別に整理された構造化ノート
+- `2025-*.md`: 特定の日付の日次ノート
+- `main.py`: シンプルなPythonスクリプト（最小限の機能）
+- `pyproject.toml`: uvパッケージマネージャーを使用したPythonプロジェクト設定
 
-## Zettelkasten Methodology
-This repository follows the Zettelkasten method for knowledge management:
+## Zettelkasten方法論
+このリポジトリは知識管理のためのZettelkasten方法に従います：
 
-### Note Format and Conventions
-- All notes are in Markdown format
-- Use `[[Note Name]]` format for internal links (Foam/Obsidian style)
-- Tags are placed at the end of notes using `#tag` format
-- Support for hierarchical tags using `#parent/child` format
-- English tags should be lowercase, Japanese tags as-is
+### ノート形式と慣例
+- すべてのノートはMarkdown形式
+- 内部リンクには `[[ノート名]]` 形式を使用（Foam/Obsidianスタイル）
+- タグは `#タグ` 形式でノートの末尾に配置
+- `#親/子` 形式を使用した階層タグをサポート
+- 英語のタグは小文字、日本語のタグはそのまま
 
-### Tag Rules
-- Tags must be placed at the end of notes
-- English tags: all lowercase (e.g., `#zettelkasten`, `#llm`, `#anthropic`)
-- Japanese tags: preserve original case (e.g., `#知的生産`)
-- Use hierarchical tags when appropriate: `#parent/child`
+### タグルール
+- タグはノートの末尾に配置する必要があります
+- 英語のタグ: 全て小文字（例：`#zettelkasten`、`#llm`、`#anthropic`）
+- 日本語のタグ: 元の大文字小文字を保持（例：`#知的生産`）
+- 適切な場合は階層タグを使用：`#親/子`
 
-### Note Structure
-Notes typically follow this structure:
-1. Title (H1)
-2. Definition/Overview section
-3. Detailed content with subsections
-4. Critical perspectives/counterarguments section
-5. Related notes/links section
-6. Tags at the bottom
+### ノート構造
+ノートは通常この構造に従います：
+1. タイトル（H1）
+2. 定義/概要セクション
+3. サブセクションを持つ詳細コンテンツ
+4. 批判的視点/反論セクション
+5. 関連ノート/リンクセクション
+6. 末尾のタグ
 
-### Agent Role
-The system is designed to work with a "Zettelkasten Agent" that:
-- Extracts interests/questions/keywords from existing notes
-- Suggests new note topics and connections
-- Proposes bidirectional links between related notes
-- Emphasizes critical thinking and counterarguments to avoid confirmation bias
-- Uses structured "heading + content" format for suggestions
+### エージェントの役割
+システムは次のような「Zettelkastenエージェント」と連携するよう設計されています：
+- 既存のノートから興味/質問/キーワードを抽出
+- 新しいノートトピックと接続を提案
+- 関連ノート間の双方向リンクを提案。関係のあるノートを探し、積極的にリンクする。
+- 確証バイアスを避けるため批判的思考と反論を重視
+- 提案には構造化された「見出し + コンテンツ」形式を使用
+- 日本語で回答する
 
-## Development Commands
-- `uv run main.py`: Run the main Python script
-- `uv sync`: Sync dependencies
-- `uv add <package>`: Add new dependencies
+## ノートの作業
+ノートを作成または編集する際：
+- 常に反論や批判的視点を含める
+- 相互参照には `[[ノート名]]` 形式を使用
+- タグをノートの末尾に配置
+- 確立されたノート構造を維持
+- 確証バイアスを考慮し、多様な視点を含める
+- 関連概念を双方向にリンク
+- 読みやすさと理解しやすさを向上させるため、箇条書きではなく完全な文章と段落でコンテンツを記述
 
-## Working With Notes
-When creating or editing notes:
-- Always include counterarguments or critical perspectives
-- Use the `[[Note Name]]` format for cross-references
-- Place tags at the end of notes
-- Maintain the established note structure
-- Consider confirmation bias and include diverse viewpoints
-- Link related concepts bidirectionally
-
-## Key Principles
-- Emphasize critical thinking over confirmation bias
-- Create structured, interconnected knowledge networks
-- Use full sentences and explanations rather than just bullet points
-- Include professional/expert perspectives when answering technical questions
-- Maintain logical flow without jumping to conclusions
+## 主要原則
+- 構造化された相互接続された知識ネットワークを作成
+- 単なる箇条書きではなく完全な文章と説明を使用
+- 技術的な質問に答える際は専門家/プロフェッショナルの視点を含める
+- 結論に飛躍せず論理的な流れを維持

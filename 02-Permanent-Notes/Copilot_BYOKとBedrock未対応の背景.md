@@ -38,4 +38,4 @@ GitHub Copilotの「Bring Your Own Key（BYOK）」機能は、ユーザーが�
 - [[生成AIとグローバルスタンダード]]
 - [[Building Effective Agents_Anthropic]]
 
-#copilot #byok #bedrock #生成AI #認証 #技術統合 #aws
+#copilot #byok #aws/bedrock #生成AI #認証 #技術統合 #aws

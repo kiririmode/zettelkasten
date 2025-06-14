@@ -39,4 +39,4 @@ IAMのpermission boundary（パーミッションバウンダリ）は、IAMユ�
 
 ---
 
-#aws #iam #permissionboundary #権限管理 #セキュリティ
+#aws #iam #permissionboundary #権限管理 #security

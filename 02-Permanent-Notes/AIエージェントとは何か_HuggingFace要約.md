@@ -42,7 +42,7 @@ AIエージェントの普及は労働市場に大きな変革をもたらしま
 ---
 
 ### 参考タグ
-#ai #aiエージェント #自律性 #リスク #倫理 #社会的インパクト #huggingface #説明可能性 #労働市場 #マルチエージェント
+#ai #ai/agents #自律性 #リスク #倫理 #社会的インパクト #huggingface #説明可能性 #労働市場 #マルチエージェント
 
 ### 関連ノート提案
 - [[Building Effective Agents_Anthropic.md]]
