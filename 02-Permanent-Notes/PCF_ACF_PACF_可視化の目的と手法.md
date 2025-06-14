@@ -41,4 +41,4 @@ plt.show()
 - [ADF検定とは何か_その考え方](ADF検定とは何か_その考え方)
 
 ## タグ
-#時系列解析 #acf #pacf #可視化 #モデル選択 #定常性 #統計モデル
+#statistics #statistics/timeseries 
