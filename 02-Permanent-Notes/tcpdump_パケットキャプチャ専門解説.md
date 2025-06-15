@@ -69,6 +69,7 @@ tcpdumpはUNIX系OSで広く利用されるパケットキャプチャツール�
 - 補完ツール（Wireshark等）と併用することで可視化や詳細解析が容易になる。
 
 ## 関連ノート/リンク
+- [[tsharkコマンド_Wiresharkコマンドライン版パケット解析]]
 - [[Docker_コンテナ通信_宛先ドメイン確認_tcpdump_Wireshark]]
 - [[Claude_Code_ネットワーク要件まとめ]]
 
