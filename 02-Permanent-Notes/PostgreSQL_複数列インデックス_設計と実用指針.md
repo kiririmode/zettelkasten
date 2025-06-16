@@ -115,23 +115,11 @@ ORDER BY calls DESC;
 
 ## 実用上の設計戦略
 
-### カバーリングインデックス（Covering Index）の活用
+### カバーリングインデックス設計の考慮
 
-カバーリングインデックスは、WHERE句の検索条件だけでなく、SELECT句で取得するカラムもインデックスに含める手法です。この設計により、PostgreSQLのIndex-Only Scanが実現され、テーブルへのアクセスを完全に回避できます。
+カバーリングインデックス（Covering Index）は、WHERE句の検索条件に加えてSELECT句で取得するカラムもインデックスに含める高度な最適化手法です。PostgreSQL 11以降のINCLUDE句を活用することで、Index-Only Scanを実現し、テーブルアクセスを完全に回避できます。
 
-```sql
--- カバーリングインデックスの例
-CREATE INDEX idx_user_activities_covering 
-ON user_activities (user_id, activity_date) 
-INCLUDE (location_id, activity_type, duration);
-
--- Index-Only Scanが実行されるクエリ
-SELECT location_id, activity_type, duration
-FROM user_activities 
-WHERE user_id = 123 AND activity_date = '2025-06-01';
-```
-
-カバーリングインデックスは検索性能を劇的に向上させますが、インデックスサイズの増大と更新性能への影響を慎重に評価する必要があります。
+複数列インデックスの設計においても、カバーリングインデックスの概念は重要ですが、詳細な設計指針と実装方法については、[[PostgreSQL_カバーリングインデックス_Index-Only_Scan最適化の実践]]で詳述しています。
 
 ### 部分インデックスとの組み合わせ
 
@@ -263,11 +251,11 @@ WHERE user_id = 123 AND activity_date = '2025-06-01';
 ## 関連ノート・リンク
 
 - [[PostgreSQL_Hash_Index_原理とメリットデメリット]]
+- [[PostgreSQL_カバーリングインデックス_Index-Only_Scan最適化の実践]]
 - [[B-tree Index最適化戦略]]
 - [[PostgreSQL クエリプランナーとインデックス選択]]
 - [[データベースパフォーマンスチューニング基礎]]
 - [[PostgreSQL パーティショニング設計指針]]
-- [[Index-Only Scan最適化手法]]
 - [[PostgreSQL 統計情報とクエリ最適化]]
 
-#database #postgresql #performance #database/index #design/database #database/optimization 
+#database #postgresql #performance #database/index #design/database #database/optimization #database/composite-index 
