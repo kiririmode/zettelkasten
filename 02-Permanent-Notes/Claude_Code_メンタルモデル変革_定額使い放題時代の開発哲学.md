@@ -87,5 +87,6 @@ AI と人間の認知特性は著しく異なるため、「この言い方な�
 - [[Building Effective Agents_Anthropic]]
 - [[Vibe_CodingにおけるJava_TypeScript_Haskellの適応性比較]]
 - [Claude Code活用において、メンタルモデルを変える必要がある](https://speakerdeck.com/erukiti/rethinking-claude-code-mental-models)
+- [[生成AIと人間の役割分担_現状の最適解]]
 
 #claude #ai #vibecoding #claude-code #promptengineering
