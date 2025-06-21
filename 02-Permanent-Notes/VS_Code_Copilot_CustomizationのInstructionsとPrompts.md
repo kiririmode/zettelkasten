@@ -113,9 +113,10 @@ VS CodeのCopilot Customizationでは、Markdown Link記法を使用してファ
 
 ## 関連ノート
 
-- [[Claude_Code_使える環境と動作概要]]
-- [[Claude-Code-Best-Practices]]
-- [[Building Effective Agents_Anthropic]]
+- [[Claude_Code_使える環境と動作概要]] - Claude Codeの動作環境と基本機能の解説
+- [[Claude-Code-Best-Practices]] - Claude Code活用のベストプラクティス
+- [[Building Effective Agents_Anthropic]] - Anthropicによる効果的なAIエージェント構築指針
+- [[GitHubCopilotの開発プロセスへの適用]] - Copilotのカスタマイゼーション機能をウォーターフォール開発工程で活用する戦略
 
 #vscode #githubcopilot #ai #prompt #onboarding
 
